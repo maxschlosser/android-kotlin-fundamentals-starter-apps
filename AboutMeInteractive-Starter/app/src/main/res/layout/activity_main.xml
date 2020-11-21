@@ -23,7 +23,7 @@
     android:orientation="vertical"
     android:paddingStart="@dimen/layout_padding"
     android:paddingEnd="@dimen/layout_padding"
-    tools:context=".MainActivity">
+    tools:context="com.example.android.aboutme.MainActivity">
 
     <TextView
         android:id="@+id/name_text"
@@ -32,6 +32,33 @@
         android:layout_height="wrap_content"
         android:text="@string/name"
         android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nickname"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        style="@style/NameStyle"
+        />
+
+    <TextView
+        android:id="@+id/nickname_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="@style/NameStyle"
+        android:text=""
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/done"
+        android:text="@string/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <ImageView
         android:id="@+id/star_image"
